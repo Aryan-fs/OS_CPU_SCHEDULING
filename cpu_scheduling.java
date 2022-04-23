@@ -154,7 +154,7 @@ public class cpu_scheduling {
             
             ready_queue = new ArrayList<>();
 
-            Time = 0;
+            Time = temp_pcb.get(0).at;
             for(PCB p : temp_pcb){
                 if(p.at < Time){
                     Time = p.at;
